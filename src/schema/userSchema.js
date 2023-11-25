@@ -16,7 +16,7 @@ const schema = buildSchema(`
 
   type Mutation {
     signUp(firstName: String!, lastName: String, accessToken: String!, email: String!,oauthProvider: String!): String
-    signIn(firstName: String!, lastName: String, accessToken: String!, email: String!,oauthProvider: String!): String
+    signIn(firstName: String, lastName: String, accessToken: String!, email: String!,oauthProvider: String!): String
   }
 `);
 

@@ -27,6 +27,8 @@ export const root = {
       if (!user) {
         throw new Error('User not found');
       }
+      user.accessToken = accessToken;
+      await user.save();
       console.log(user);
   
       // const token = jwt.sign({ userId: user.id, email: user.email }, 'your-secret-key', { expiresIn: '1h' });
